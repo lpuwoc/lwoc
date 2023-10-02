@@ -1,0 +1,17 @@
+{
+  "name": "@lwoc/workers",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "node --loader @esbuild-kit/esm-loader index.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "hono": "^3.7.3"
+  },
+  "devDependencies": {
+    "@esbuild-kit/esm-loader": "^2.6.5",
+    "hasura-cli": "^2.11.11",
+    "typescript": "^5.2.2"
+  }
+}

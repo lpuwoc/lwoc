@@ -1,0 +1,22 @@
+{
+  "name": "@lwoc/api",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader @esbuild-kit/esm-loader index.ts",
+    "dev": "nodemon --ext \"ts,json\" --exec \"node --loader @esbuild-kit/esm-loader index.ts\""
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.2.0",
+    "@types/node": "^20.8.0",
+    "dotenv": "^16.3.1",
+    "hono": "^3.7.3",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@esbuild-kit/esm-loader": "^2.6.5",
+    "hasura-cli": "^2.11.11",
+    "typescript": "^5.2.2"
+  }
+}

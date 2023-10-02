@@ -1,0 +1,40 @@
+{
+  "name": "lwoc-app",
+  "version": "0.0.0",
+  "description": "LPU Winter of Code Mono Repo",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "start": "dotenv -- turbo dev",
+    "build": "dotenv -- turbo build",
+    "dev": "dotenv -- turbo dev",
+    "test": "dotenv -- turbo test",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
+  },
+  "keywords": [
+    "lwoc",
+    "gdsc",
+    "lpu",
+    "gdsc lpu"
+  ],
+  "author": {
+    "name": "GDSC LPU",
+    "email": "gdsc@lpu.co.in",
+    "url": "https://gdsc.community.dev/lovely-professional-university-jalandhar/"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@bravo68web/eslint-config": "^1.2.2",
+    "@bravo68web/prettier-config": "^1.2.2",
+    "@bravo68web/tsconfig": "^1.2.2",
+    "dotenv-cli": "^7.3.0",
+    "eslint": "^8.50.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.14"
+  },
+  "packageManager": "pnpm@8.8.0"
+}
