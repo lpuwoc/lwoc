@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 
-const page = () => {
+const Onboarding = () => {
   useEffect(() => {
     if (localStorage.getItem("access_token"))
       window.location.href = "/onboarding";
@@ -11,4 +11,4 @@ const page = () => {
   return <div>LOLOLO</div>;
 };
 
-export default page;
+export default Onboarding;

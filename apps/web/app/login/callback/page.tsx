@@ -2,7 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import React from "react";
 
-const page = () => {
+const Callback = () => {
   const searchParams = useSearchParams();
   try {
     const token = searchParams.get("access_token");
@@ -13,8 +13,8 @@ const page = () => {
     return <div>Redirecting...</div>;
 
   } catch (error) {
-    return <div>"Please give me token 😭</div>;
+    return <div>Please give me token 😭</div>;
   }
 };
 
-export default page;
+export default Callback;
