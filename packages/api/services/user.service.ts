@@ -31,8 +31,6 @@ export default class UserService {
             }
         });
 
-        console.log(tokenData);
-
         return tokenData.data.access_token;
     }
 }
