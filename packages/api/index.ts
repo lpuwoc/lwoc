@@ -8,7 +8,7 @@ import { serve } from '@hono/node-server'
 
 import routes from './routes'
 
-const app = new Hono()
+const app = new Hono({ strict: false })
 
 app.use("/", logger())
 app.use("/", cors({
