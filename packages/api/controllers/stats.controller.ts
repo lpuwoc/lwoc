@@ -10,7 +10,7 @@ export default class StatsController {
             var userRepos: AxiosResponse = await axios.get(`https://api.github.com/users/${username}/repos`)
         } catch (err: any) {
             if (err.response.status == 404) {
-                return c.text('User not found', 404)
+                return c.text('Does the user exist❓️ Check again 🐒', 404)
             } else {
                 return c.text('Something went wrong', 500)
             }
